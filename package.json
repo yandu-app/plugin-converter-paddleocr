@@ -1,0 +1,25 @@
+{
+  "name": "@yandu/plugin-converter-paddleocr",
+  "version": "1.0.0",
+  "description": "Yandu PDF converter plugin using PaddleOCR",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@yandu/types": "^0.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "typescript": "^5.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
