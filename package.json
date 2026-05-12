@@ -1,5 +1,5 @@
 {
-  "name": "@yandu/plugin-converter-paddleocr",
+  "name": "yandu-plugin-converter-paddleocr",
   "version": "1.0.0",
   "description": "Yandu PDF converter plugin using PaddleOCR",
   "type": "module",

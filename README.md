@@ -1,4 +1,4 @@
-# @yandu/plugin-converter-paddleocr
+# yandu-plugin-converter-paddleocr
 
 Yandu PDF converter plugin using PaddleOCR.
 
@@ -11,6 +11,6 @@ Yandu PDF converter plugin using PaddleOCR.
 ## Registration
 
 ```typescript
-import plugin from '@yandu/plugin-converter-paddleocr';
+import plugin from 'yandu-plugin-converter-paddleocr';
 plugin.register(system);
 ```
