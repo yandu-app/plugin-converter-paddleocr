@@ -381,7 +381,7 @@ except Exception as e:
       'citations: []',
     ];
 
-    const mappingPath = path.join(outputDir, 'paper.mapping.yaml');
+    const mappingPath = path.join(outputDir, 'item.mapping.yaml');
     await writeFile(mappingPath, yamlLines.join('\n'));
 
     if (typeof source !== 'string' && pdfPath.includes('temp_input')) {
