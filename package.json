@@ -10,10 +10,14 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test test/*.test.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "prepack": "npm run test"
   },
   "dependencies": {
-    "@yandu/types": "workspace:*"
+    "@yandu/types": "0.0.7"
   },
   "devDependencies": {
     "@types/node": "^25.6.2",
@@ -21,5 +25,12 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "bin": {
+    "yandu-converter-paddleocr": "./dist/worker.js"
+  },
+  "yandu": {
+    "worker": "./dist/worker.js",
+    "protocol": "jsonl-v1"
   }
 }
